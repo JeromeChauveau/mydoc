@@ -66,5 +66,31 @@ and in parent:<event-thumbnail [event]="event1" (eventClick)='handleEventClicked
 handleEventClicked(data) {
     console.log(data);
   }
+  
+  # Exploring the Angular Template Syntax
+  ## Interpolation, property bindings
+  Interpolation : {{}}, to display data of a property 
+  Property binding : [], bind DOM element to a property. For instance : <img [src]="user.imageUrl"/>, where user is a property of the component.
+  Expression can be anything : function call, sum ...
+  Few restrictions : assignments, new keyword, expression chaining, use of global namespace.
+  Recommendations for expressions : no side-effects, fast, simple (no bus), idempotent
+    
+  ## Event bindings and statement
+  Event : <button (click)="doSomething()">. Same as above, except = is ok and there can be side effects so no idempotence ; no need to be fast to.
+ 
+ \*ngFor : \* makes it a structurale directive, meaning it changes the structure of the DOM (which directives do not).
+ <div \*ngFor="let event of events"> --> event will be accessible anywhere inside the div.
+ 
+ ## Handling null values
+ Safe navigation navigator for possibly null data: add a ? after the object in interpolation. 
+ Example : <div>Address : {{event.location?.address}}</div>
+ To avoid displaying when undefined: 
+    ```<div *ngIf="event.location">
+      <div>Address : {{event.location?.address}}</div>
+    </div> ```
+    
+ 
+  
+  
 
 
