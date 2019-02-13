@@ -36,6 +36,8 @@ When testing locally for dev, you do not need to have a certificate validated ag
 
 Windows : run powershell (à revoir quand besoin)
 
+# Securing the application
+## HTTP to HTTPS
 
 
         
