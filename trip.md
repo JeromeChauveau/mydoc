@@ -53,6 +53,12 @@ https://www.visitlondon.com/fr
 * Brick lane (manger indien) : https://goo.gl/maps/ChV59XhHhqP2
 * Spitafields (marché couvert): https://goo.gl/maps/YFHHXAMWR1v - 10h-17h30, every day
 
+
+
+![Les visites](https://github.com/JeromeChauveau/mydoc/blob/master/all_visits.png)
+
+
+
 ## Pour une autre fois
 ### Intérieur
 * Tour de Londres (£££ - 63£) : https://goo.gl/maps/BUmfUrKVhjy
